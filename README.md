@@ -1,4 +1,4 @@
-# Team Rawbot & friends Coding Standards
+# Liip LS & friends Coding Standards
 
 This project should be use as a set of guidelines for development at Liip Lausanne.
 
