@@ -114,4 +114,4 @@ We group similar declarations together and add space between groups, here’s a 
 }
 ```
 
-At the moment there’s no tools used to validate code styling compliance.
+A [Stylelint configuration](https://github.com/team-rawbot/stylelint-config-rawbot) exists to validate code styling compliance.
