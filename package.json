@@ -1,0 +1,24 @@
+{
+  "name": "rawbot-coding-standards",
+  "version": "1.0.0",
+  "description": "Documentation about coding standards applied at Liip Lausanne",
+  "main": "index.js",
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "./deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-rawbot/coding-standards.git"
+  },
+  "author": "Benoît Burgener",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/team-rawbot/coding-standards/issues"
+  },
+  "homepage": "https://github.com/team-rawbot/coding-standards#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  }
+}
