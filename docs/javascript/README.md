@@ -23,7 +23,7 @@ We usually configure it with a `prettier.config.js` file at the project root usi
 ```js
 module.exports = {
   singleQuote: true,
-  trailingComma: 'all',
+  trailingComma: 'es5',
 };
 ```
 
