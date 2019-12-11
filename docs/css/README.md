@@ -1,21 +1,22 @@
 # CSS
 
-* We preprocess our stylesheets with [Sass](https://sass-lang.com/), using the SCSS syntax.
-* We build projects on top of [Kanbasu](http://kanbasu.liip.ch/), our own Sass framework.
+- If necessary, we preprocess our stylesheets with [Sass](https://sass-lang.com/) using the SCSS syntax.
+- We postprocess our stylesheets with [PostCSS](https://postcss.org/), for example to ensure [browsers support](/browsers-support) or [optimize the output](https://cssnano.co/).
+- We prefer [Kanbasu](http://kanbasu.liip.ch/) or [Tailwind](https://tailwindcss.com/) over other frameworks.
 
 ## Code Styling
 
 ### Rules of thumb
 
-* Apply the principles of [Object-oriented CSS](https://github.com/stubbornella/oocss/wiki).
-* Name classes according to the [BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) or in `kebab-case` when not applicable.
-* Keep the precedence as low as possible:
-  * Prefer classes over element/attribute for selectors, never use IDs.
-  * Don’t nest rule sets without explicit reason and never more than 3 levels; prefer more specific names.
-* Take advantage of the cascade to avoid repeating declarations.
-* Avoid using Sass’ `@extend` and only extend [placeholder selectors](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_foo) if you really want to.
-* Use helper classes sparingly.
-* Split each component into a dedicated file (see [Files Organization](#files-organization) below).
+- Apply the principles of [Object-oriented CSS](https://github.com/stubbornella/oocss/wiki).
+- Name classes according to the [BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) or in `kebab-case` when not applicable.
+- Keep the precedence as low as possible:
+  - Prefer classes over element/attribute for selectors, never use IDs.
+  - Don’t nest rule sets without explicit reason and never more than 3 levels; prefer more specific names.
+- Take advantage of the cascade to avoid repeating declarations.
+- Avoid using Sass’ `@extend` and only extend [placeholder selectors](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_foo) if you really want to.
+- Use helper classes as long as the pattern doesn’t repeat.
+- Split each component into a dedicated file (see [Files Organization](#files-organization) below).
 
 ### Declarations groups & order
 
@@ -40,7 +41,7 @@ We separate declarations of the same type in groups, here’s an example:
 
   // Typeface
   color: white;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
@@ -66,12 +67,12 @@ Check the list of [editor plugins](https://stylelint.io/user-guide/complementary
 
 We organize our Sass partials [in the same way Kanbasu does](https://github.com/liip/kanbasu/tree/master/src/scss), into separates folders:
 
-| Folder | Description | Children |
-| - | - | - |
-| settings | Variables & common settings | Usually one `_settings` file |
-| tools | Sass functions and mixins | Usually one `_mixins` and one `_functions` file |
-| vendor | Third-parties code, prefer Node modules when available | |
-| defaults | All the defaults & global elements (html, body, h1, p, blockquote, …) | We often see `_layout`, `_typography`, `_forms`, or `_fonts` here |
-| components | Standalone group of classes forming a single reusable component (`.user-card`, `.dashboard-panel`, `.site-header`, …) | One file per component, named as the component main class |
-| pages | Very specific code dedicated to one page | One file per page |
-| helpers | Various specific classes reusable anywhere (`.text-brand`, `.img-circle`, …) | Group similar classes per files (`_text`, `_images`, …) |
+| Folder     | Description                                                                                                           | Children                                                          |
+| ---------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| settings   | Variables & common settings                                                                                           | Usually one `_settings` file                                      |
+| tools      | Sass functions and mixins                                                                                             | Usually one `_mixins` and one `_functions` file                   |
+| vendor     | Third-parties code, prefer Node modules when available                                                                |                                                                   |
+| defaults   | All the defaults & global elements (html, body, h1, p, blockquote, …)                                                 | We often see `_layout`, `_typography`, `_forms`, or `_fonts` here |
+| components | Standalone group of classes forming a single reusable component (`.user-card`, `.dashboard-panel`, `.site-header`, …) | One file per component, named as the component main class         |
+| pages      | Very specific code dedicated to one page                                                                              | One file per page                                                 |
+| helpers    | Various specific classes reusable anywhere (`.text-brand`, `.img-circle`, …)                                          | Group similar classes per files (`_text`, `_images`, …)           |
