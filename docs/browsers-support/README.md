@@ -24,7 +24,27 @@ We use [Babel](https://babeljs.io/) with [@babel/preset-env](https://babeljs.io/
 
 Language can be transpiled but features must be polyfilled.
 
-Install [@babel/polyfill](https://babeljs.io/docs/en/babel-polyfill) and set `@babel/preset-env` option `useBuiltIns` to `usage` to automatically load the necessary polyfills based on your code and Browserslist settings (see above).
+Once `@babel/preset-env` is installed, set the option `useBuiltIns` to `usage` to automatically load the necessary polyfills based on your code and Browserslist settings (see above). Then, install [core-js@3](https://github.com/zloirock/core-js) and set the option `corejs` to `3`.
+
+The [@babel/plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime) plugin should also be used to enable the re-use of Babel's injected helper code and save on codesize.
+
+```js
+// babel.config.js
+
+module.exports = {
+  presets: [
+    ["@babel/preset-env", {
+      useBuiltIns: "usage",
+      corejs: 3,
+    }]
+  ],
+  plugins: [
+    ["@babel/plugin-transform-runtime", {
+      corejs: 3,
+    }]
+  ]
+};
+```
 
 Exemple of features that are not transpiled and needs to be polyfilled:
   * `Promise`
