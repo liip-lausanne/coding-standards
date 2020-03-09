@@ -23,6 +23,9 @@ indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
 ```
 
 As a developer, ensure you have installed and enabled the [plugin for your editor](http://editorconfig.org/#download).
