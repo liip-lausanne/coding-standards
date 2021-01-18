@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/team-rawbot/coding-standards#readme",
   "devDependencies": {
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.8.0"
   }
 }
