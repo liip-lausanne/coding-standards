@@ -1,6 +1,6 @@
 # JavaScript
 
-* We write modern, ECMAScript 2015+ JavaScript that we eventually transpile to support all the browsers we have to (see [Browsers Support](/browsers-support/)).
+* We write modern JavaScript that we eventually transpile to support all the browsers we have to (see [Browsers Support](/browsers-support/)).
 * We manage dependencies with [npm](https://www.npmjs.com/package/npm).
 * We use [EsLint](http://eslint.org/) and [Prettier](https://prettier.io/) to ensure consistency.
 

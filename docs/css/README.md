@@ -1,8 +1,12 @@
 # CSS
 
-- If necessary, we preprocess our stylesheets with [Sass](https://sass-lang.com/) using the SCSS syntax.
+- We prefer [Tailwind](https://tailwindcss.com/) over other frameworks.
 - We postprocess our stylesheets with [PostCSS](https://postcss.org/), for example to ensure [browsers support](/browsers-support) or [optimize the output](https://cssnano.co/).
-- We prefer [Kanbasu](http://kanbasu.liip.ch/) or [Tailwind](https://tailwindcss.com/) over other frameworks.
+- If really necessary, we preprocess our stylesheets with [Sass](https://sass-lang.com/) using the SCSS syntax.
+
+::: tip NOTICE
+The following applies only when you create your own declarations, not if you stick to Tailwind’s utility classes.
+:::
 
 ## Code Styling
 
@@ -41,7 +45,7 @@ We separate declarations of the same type in groups, here’s an example:
 
   // Typeface
   color: white;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
@@ -65,7 +69,7 @@ Check the list of [editor plugins](https://stylelint.io/user-guide/complementary
 
 ## Files organization
 
-We organize our Sass partials [in the same way Kanbasu does](https://github.com/liip/kanbasu/tree/master/src/scss), into separates folders:
+We organize our partials into separates folders:
 
 | Folder     | Description                                                                                                           | Children                                                          |
 | ---------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |

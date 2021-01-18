@@ -29,3 +29,7 @@ indent_style = tab
 ```
 
 As a developer, ensure you have installed and enabled the [plugin for your editor](http://editorconfig.org/#download).
+
+::: warning
+When using Prettier, you might encounter conflicts with the `max_line_length` rule. Feel free to restrict it to a specific set of file types so it doesn’t apply to files handled by Prettier.
+:::

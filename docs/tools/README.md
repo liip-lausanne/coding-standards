@@ -14,21 +14,23 @@ Most recent and new projects should use Docker with [Pontsun](https://github.com
 
 Older projects use Vagrant through [Drifter](https://github.com/liip/drifter). It has a [webpack role](https://liip-drifter.readthedocs.io/en/latest/roles/webpack.html) you can enable to automatically set it up.
 
+Each project must provide a setup guide on how to get started.
+
 ## Styleguide Starterkit
 
 The [Styleguide Starterkit](https://github.com/liip/styleguide-starterkit) is a boilerplate to scaffold new styleguides using Fractal preconfigured with webpack.
 
-## Storybook Starterkit
+## Storybook Starterkit (WIP)
 
 The [Storybook Starterkit](https://github.com/liip/storybook-starterkit) is another boilerplate to scaffold new styleguides but using Storybook.
 
 ## Kanbasu
 
-[Kanbasu](https://kanbasu.liip.ch/) is our open-source Sass framework that we use on almost all projects. It serves as a set of common components and helpers to build interfaces.
+[Kanbasu](https://kanbasu.liip.ch/) was our open-source framework that we used on almost all projects. It’s a set of common components and helpers to build interfaces written in Sass and following the BEM syntax. It is deprecated and we do not use it for new projects.
 
 ## Tailwind
 
-[Tailwind](https://tailwindcss.com/) is an alternate CSS framework we use on some projects, when the utility-first approach makes more sense.
+[Tailwind](https://tailwindcss.com/) is currently our go-to CSS framework.
 
 ## Vue CLI
 
