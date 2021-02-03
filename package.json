@@ -1,5 +1,5 @@
 {
-  "name": "rawbot-coding-standards",
+  "name": "liip-ls-coding-standards",
   "version": "1.0.0",
   "description": "Documentation about coding standards applied at Liip Lausanne",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/team-rawbot/coding-standards.git"
+    "url": "git+https://github.com/liip-lausanne/coding-standards.git"
   },
-  "author": "Benoît Burgener",
+  "author": "Liip AG",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/team-rawbot/coding-standards/issues"
+    "url": "https://github.com/liip-lausanne/coding-standards/issues"
   },
-  "homepage": "https://github.com/team-rawbot/coding-standards#readme",
+  "homepage": "https://github.com/liip-lausanne/coding-standards#readme",
   "devDependencies": {
     "vuepress": "^1.8.0"
   }

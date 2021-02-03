@@ -2,7 +2,7 @@ module.exports = {
   title: 'Liip LS front-end standards',
   base: '/coding-standards/',
   themeConfig: {
-    repo: 'team-rawbot/coding-standards',
+    repo: 'liip-lausanne/coding-standards',
     repoLabel: 'GitHub',
     lastUpdated: 'Last Updated',
     sidebar: [
