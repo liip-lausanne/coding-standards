@@ -18,7 +18,10 @@ You should install the [plugin](http://eslint.org/docs/user-guide/integrations) 
 
 Prettier is an opinionated formatter that will rewrite JavaScript for you following predefined rules; usually when you save a file.
 
-We usually configure it with a `prettier.config.js` file at the project root using the following settings:
+Prettier configuration can be done with `.prettierrc.json` or `prettier.config.js`. Prefer the `js` file so that you will be able to 
+comment it, and even maybe doing some logic.
+
+We usually configure at the project root with the following settings:
 
 ```js
 module.exports = {
