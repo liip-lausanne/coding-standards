@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/liip-lausanne/coding-standards#readme",
   "devDependencies": {
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.9.7"
   }
 }
