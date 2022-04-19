@@ -4,11 +4,11 @@
 - We postprocess our stylesheets with [PostCSS](https://postcss.org/), for example to ensure [browsers support](/browsers-support) or [optimize the output](https://cssnano.co/).
 - If really necessary, we preprocess our stylesheets with [Sass](https://sass-lang.com/) using the SCSS syntax.
 
+## Code Styling
+
 ::: tip NOTICE
 The following applies only when you create your own declarations, not if you stick to Tailwind’s utility classes.
 :::
-
-## Code Styling
 
 ### Rules of thumb
 
@@ -80,3 +80,9 @@ We organize our partials into separates folders:
 | components | Standalone group of classes forming a single reusable component (`.user-card`, `.dashboard-panel`, `.site-header`, …) | One file per component, named as the component main class         |
 | pages      | Very specific code dedicated to one page                                                                              | One file per page                                                 |
 | helpers    | Various specific classes reusable anywhere (`.text-brand`, `.img-circle`, …)                                          | Group similar classes per files (`_text`, `_images`, …)           |
+
+## Legacy
+
+### Kanbasu
+
+[Kanbasu](https://kanbasu.liip.ch/) was our open-source framework that we used on almost all projects. It’s a set of common components and helpers to build interfaces written in Sass and following the BEM syntax. It is deprecated and we do not use it for new projects.

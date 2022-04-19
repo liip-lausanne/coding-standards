@@ -28,7 +28,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['@liip-lausanne', 'plugin:prettier/recommended'],
+  extends: ['@liip-lausanne', 'prettier'],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
@@ -74,11 +74,12 @@ We enjoy [msw](https://github.com/mswjs/msw) to mock asynchronous requests.
 
 ## Third-parties
 
-Our go-to framework is [Vue.js](https://vuejs.org/) with its friends [Vuex](https://vuex.vuejs.org/) and [Vue Router](https://router.vuejs.org/) if necessary. In the case of a <abbr title="Single Page App">SPA</abbr>, we use [Vue CLI](https://cli.vuejs.org/) to scaffold the project.
+Our go-to framework is [Vue.js](https://vuejs.org/), with its friends [Pinia](https://pinia.vuejs.org/) (or [Vuex](https://vuex.vuejs.org/) on legacy projects) and/or [Vue Router](https://router.vuejs.org/) if necessary. In the case of a <abbr title="Single Page App">SPA</abbr>, we use [Create Vue](https://github.com/vuejs/create-vue) to scaffold the project.
 
 Libraries we often use accross projects:
 
+- [Chūshō](https://www.chusho.dev/) for accessible Vue.js components
 - [Lodash](https://lodash.com/) for utility methods
 - [Axios](https://github.com/axios/axios) for asynchronous requests
-- [date-fns](https://date-fns.org/) to work with time and dates
+- [dayjs](https://github.com/iamkun/dayjs) or [date-fns](https://date-fns.org/) to work with time and dates
 - [accounting.js](http://openexchangerates.github.io/accounting.js/) to work with money and currencies
