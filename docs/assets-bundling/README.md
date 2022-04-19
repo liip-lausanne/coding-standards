@@ -1,6 +1,14 @@
 # Assets bundling
 
-To leverage [code splitting](https://webpack.js.org/guides/code-splitting/), [lazy loading](https://webpack.js.org/guides/lazy-loading/) and [tree shaking](https://webpack.js.org/guides/tree-shaking/), we favor module bundlers to manage our assets.
+## Vite
 
-* We prefer [webpack](https://webpack.js.org/) to load and bundle our assets and dependencies together.
-* We use [webpack-dev-server](https://github.com/webpack/webpack-dev-server) to serve our assets during development.
+We prefer [Vite](https://vitejs.dev/) over other build tools, because:
+
+- it works out of the box with all our usual file types
+- has a built-in dev server with <abbr title="Hot Module Replacement">HMR</abbr>
+- it’s super fast
+- can be integrated with all type of backends
+
+## Webpack
+
+Older projects, and projects that requires it for whatever reason can use [webpack](https://webpack.js.org/) instead.

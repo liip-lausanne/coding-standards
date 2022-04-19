@@ -8,8 +8,9 @@ We use [npm](https://www.npmjs.com/package/npm) scripts to run all kind of tasks
 
 ```json
 "scripts": {
-  "start": "Your dev server start command goes here",
-  "build": "Your build command goes here",
+  "start": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
   "eslint": "eslint (…)",
   "eslint:fix": "npm run eslint -- --fix",
   "stylelint": "stylelint (…)",
