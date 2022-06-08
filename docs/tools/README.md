@@ -10,7 +10,7 @@ For styleguides, SPA or any other app using only Node.js, we prefer to keep thin
 
 ### Larger projects
 
-Most recent and new projects should use Docker (potentially with [Pontsun](https://github.com/liip/pontsun)). There are no ready-made solution for common front-end tools at the time of writing.
+Most recent and new projects should use Docker. There are no ready-made solution for common front-end tools at the time of writing.
 
 Older projects use Vagrant through [Drifter](https://github.com/liip/drifter). It has a [webpack role](https://liip-drifter.readthedocs.io/en/latest/roles/webpack.html) you can enable to automatically set it up.
 
@@ -21,10 +21,6 @@ Each project must provide a setup guide on how to get started.
 ### Fractal Starterkit
 
 The [Fractal Starterkit](https://github.com/liip/styleguide-starterkit) is a boilerplate to scaffold new styleguides using Fractal preconfigured with webpack.
-
-### Storybook Starterkit <Badge type="warning" text="WIP" />
-
-The [Storybook Starterkit](https://github.com/liip/storybook-starterkit) is another boilerplate to scaffold new styleguides but using Storybook.
 
 ## Vue
 

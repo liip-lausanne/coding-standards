@@ -4,6 +4,4 @@ We tend to create [living style guides](https://www.smashingmagazine.com/2016/05
 
 Fractal doesn’t handle assets management on its own, therefor we made [our own starterkit](https://github.com/liip/styleguide-starterkit) that is preconfigured with a couple of tools, especially webpack.
 
-We also have a [Storybook starterkit](https://github.com/liip/storybook-starterkit) <Badge type="warning" text="WIP" /> with a bunch of predefined config and addons.
-
 Check out the [Liip Styleguide](https://styleguide.liip.ch/) for an example using Fractal.
