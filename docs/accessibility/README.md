@@ -1,6 +1,6 @@
 # Accessibility
 
-The web is for everyone and therefor, we aim to target [WCAG 2.1 level AA](https://www.w3.org/TR/WCAG21/) for everything if not stated otherwise.
+The web is for everyone and therefore, we aim to target [WCAG 2.1 level AA](https://www.w3.org/TR/WCAG21/) for everything if not stated otherwise.
 
 [Read more about Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/)
 
@@ -9,6 +9,7 @@ The web is for everyone and therefor, we aim to target [WCAG 2.1 level AA](https
 Users should be able to:
 
 - navigate with a keyboard
+- navigate using assistive technologies (e.g. swipe gestures with VoiceOver on iOS)
 - change the appearance through their browser settings (contrast, zoom, …)
 - use a screen reader
 
