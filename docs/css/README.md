@@ -12,6 +12,9 @@ The following applies only when you create your own declarations, not if you sti
 
 ### Rules of thumb
 
+- Stay as close as possible to the CSS standards; use frameworks’ custom syntaxes only when necessary. For example when using Tailwind, you can use `@apply` for theme-related values (like `m-2`, `gap-4`, …), but you should never use it instead of regular properties.
+  - Don’t: `@apply flex;`
+  - Do: `display: flex;`
 - Apply the principles of [Object-oriented CSS](https://github.com/stubbornella/oocss/wiki).
 - Name classes according to the [BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) or in `kebab-case` when not applicable.
 - Keep the precedence as low as possible:
