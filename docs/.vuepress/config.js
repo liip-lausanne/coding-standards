@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Liip Lausanne coding standards',
-  base: '/coding-standards/',
+  base: process.env.BASE || '/coding-standards/',
   themeConfig: {
     repo: 'liip-lausanne/coding-standards',
     repoLabel: 'GitHub',
