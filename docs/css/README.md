@@ -85,14 +85,12 @@ Also split each component into a dedicated file (see [Files Organization](#files
 <Versus>Avoid cluttering your CSS with many variants of the same pattern: <code>.list-inline--right</code>, <code>.media--right</code>, <code>.actions--right</code></Versus>
 <Versus correct>Use a single utility classes to alter the behavior: <code>.text-right</code>, <code>.items-end</code>, <code>.text-gray-500</code></Versus>
 
-### Let the parent handle outer spacing
+### Let the parent handle sizing and outer spacing
 
-Does this element should **always** have a `margin-bottom`? Or is it only in some context?
+A rule of thumb you can apply in 99% of cases is: **a component should adapt to its parent size and only care about its own inner spacing**.
 
-A rule of thumb you can apply in 99% of cases is: **a component should only care about its own inner spacing**.
-
-- Need space between items in a list? Use `gap` on the parent.
-- Need space around columns and rows in a grid? Use `gap` on the parent.
+- Need to lay cards on multiple columns? Use `display: grid` on the parent.
+- Need space between items in a list or around columns and rows in a grid? Use `gap` on the parent.
 - Need space between a title and a paragraph? Add `margin-bottom` on the title or `margin-top` on the paragraph depending if one or the other is optional, but do it **only** for this title or this paragraph in particular (using utility classes for example). Alternatively, add a wrapper around both and use… `gap`!
 
 > It’s gaptastic!
