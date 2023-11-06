@@ -15,11 +15,11 @@ Users should be able to:
 
 ## Examples
 
-### Use the right HTML element for the right job
+### Use the right HTML element for the job
 
 **Example:** Use `a` for links to a different page or anchor and `button` for actions on click.
 
-**Why:** they are focusable with the keyboard and pressing <kbd>Enter</kbd> triggers the click out-of-the-box.
+**Why:** they are both focusable with the keyboard natively and pressing <kbd>Enter</kbd> triggers the click out-of-the-box.
 
 ### Label everything
 
@@ -33,7 +33,7 @@ Users should be able to:
 </button>
 ```
 
-**Example:** An image that is part of the content must have an alternate text describing its content:
+**Example:** An image that is part of the content must have an alternate text describing what can be seen in the picture:
 
 ```html
 <img
@@ -55,5 +55,7 @@ A native `select` is always better than any custom counterpart. Prefer limiting 
 
 ## Resources
 
+- [What is accessibility?](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_Accessibility) on MDN
+- [Axe](https://www.deque.com/axe/) accessibility testing tool
 - Creating accessible design patterns and widget using [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/)
-- [Chūshō](https://www.chusho.dev/) is our library of accessible Vue.js components
+- [Web Components Accessibility FAQ](https://www.matuzo.at/blog/2023/web-components-accessibility-faq)
