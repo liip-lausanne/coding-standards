@@ -1,7 +1,7 @@
 # JavaScript
 
 - We write modern JavaScript that we eventually transpile to support all the browsers we have to (see [Browsers Support](/browsers-support/)).
-- We manage dependencies with [npm](https://www.npmjs.com/package/npm).
+- We manage dependencies with [npm](https://www.npmjs.com/package/npm) (see [Packages management](/packages-management/)).
 - We use [EsLint](http://eslint.org/) and [Prettier](https://prettier.io/) to ensure consistency.
 
 ## Code styling
@@ -68,7 +68,7 @@ See [scripts](/packages-management/#scripts) for conventions.
 
 ## Testing
 
-We prefer [Jest](https://jestjs.io/) to run unit & functional tests and [Cypress](https://www.cypress.io/) for end-to-end tests.
+We prefer [Vitest](https://vitest.dev/) or [Jest](https://jestjs.io/) to run unit & functional tests and [Cypress](https://www.cypress.io/) for end-to-end tests.
 
 We enjoy [msw](https://github.com/mswjs/msw) to mock asynchronous requests.
 
@@ -78,7 +78,6 @@ Our go-to framework is [Vue.js](https://vuejs.org/), with its friends [Pinia](ht
 
 Libraries we often use accross projects:
 
-- [Chūshō](https://www.chusho.dev/) for accessible Vue.js components
 - [Lodash](https://lodash.com/) for utility methods
 - [Axios](https://github.com/axios/axios) for asynchronous requests
 - [dayjs](https://github.com/iamkun/dayjs) or [date-fns](https://date-fns.org/) to work with time and dates
