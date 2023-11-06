@@ -1,56 +1,29 @@
 # Browsers Support
 
-## Browserslist
+## Principles
 
-We use [browserslist](https://github.com/browserslist/browserslist) to configure the browsers we want to support. Although this depends on the project and client requirements, our current default settings are:
+- Use native and well supported features as much as possible
+- Use new syntaxes only if they are in an advanced stage of specification, transpile them automatically using build tools
+- Avoid APIs that are not supported by the browsers your project needs to support, we don’t want to ship polyfills
 
-```
->1% in CH
-not dead
-```
+## Compatibility
 
-We prefer to define this in a `.browserslistrc` file at the project root.
+### Syntax
 
-## CSS compatibility
+Vite, our go-to bundler, use [EsBuild](https://esbuild.github.io/api/#target) under the hood and automatically transpiles the code to [support a defined range of browsers](https://vitejs.dev/guide/build.html#browser-compatibility) by default for both CSS & JavaScript.
 
-We use [Autoprefixer](https://github.com/postcss/autoprefixer) to automatically add vendor-prefixed properties required by the browsers defined above. Autoprefixer automatically reads Browserslist settings.
+You can change the list of compatible browsers by customizing the [`build.target`](https://vitejs.dev/config/build-options.html#build-target) option.
 
-## JavaScript compatibility
+### APIs
 
-The project should use a tool that reads the Browserslist file above and transpile the code accordingly. It can be [Babel](https://babeljs.io/) with [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) for example.
+Avoid APIs that are not fully supported in the first place. If you really need them, consider degrading the exeperience gracefully. As a last resort, include a dedicated polyfill through renowned sources like [core-js](https://github.com/zloirock/core-js).
 
-### Polyfills
+### Legacy
 
-::: warning
-Now that Internet Explorer is dead and features are rolled out fast to all major browsers, polyfills aren’t common anymore. Please consider using native & well supported features first.
-:::
+Older projects often use [Babel](https://babeljs.io/) with [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) to transpile JavaScript and include API polyfills.
 
-Language can be transpiled but features must be polyfilled.
+Projects that do not use Vite may use [Browserslist](https://github.com/browserslist/browserslist) to define the list of browsers we want to be compatible with and [Autoprefixer](https://github.com/postcss/autoprefixer) to add CSS prefixes. They shouldn’t be necessary in a Vite/EsBuild setup.
 
-If you use `@babel/preset-env`, you can set the option `useBuiltIns` to `usage` to automatically load the necessary polyfills based on your code and Browserslist settings (see above). Then, install [core-js@3](https://github.com/zloirock/core-js) and set the option `corejs` to `3`.
+## Resources
 
-The [@babel/plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime) plugin should also be used to enable the re-use of Babel's injected helper code and save on codesize.
-
-```js
-// babel.config.js
-
-module.exports = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        useBuiltIns: 'usage',
-        corejs: 3,
-      },
-    ],
-  ],
-  plugins: [
-    [
-      '@babel/plugin-transform-runtime',
-      {
-        corejs: 3,
-      },
-    ],
-  ],
-};
-```
+- [CanIUse.com](https://caniuse.com/) allows you to check browsers support for a given feature
