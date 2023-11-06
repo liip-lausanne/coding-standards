@@ -15,7 +15,7 @@
 <Versus>Don’t use Stylus, Sass without the SCSS syntax, or other exotic syntax</Versus>
 <Versus>Don’t use framework features with no added value like Tailwind’s <code>@apply flex</code></Versus>
 <Versus correct>Use native CSS syntax and features, eventually with syntactic sugar (such as nesting) to reduce repetitions and improve readability</Versus>
-<Versus correct>Use framework tools when it prevents repetition and improve consistency: <code>@apply mb-4</code>, <code>box-shadow: 0 0 10px theme('colors.blue.500')</code>; write plain declarations otherwise: <code>display: flex;</code></Versus>
+<Versus correct>Use framework tools when it prevents repetition and improve consistency: <code>box-shadow: 0 0 10px theme('colors.blue.500')</code>; write plain declarations otherwise: <code>display: flex;</code></Versus>
 
 ### Create reusable patterns
 
