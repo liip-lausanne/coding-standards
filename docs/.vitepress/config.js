@@ -24,13 +24,16 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Guide',
+        text: 'Common',
+        items: [{ text: 'Whitespace', link: '/whitespace/' }],
+      },
+      {
+        text: 'Front-end',
         items: [
-          { text: 'Whitespace', link: '/whitespace/' },
           { text: 'Browers support', link: '/browsers-support/' },
           { text: 'Accessibility', link: '/accessibility/' },
           { text: 'Assets bundling', link: '/assets-bundling/' },
-          { text: 'Scripts', link: '/scripts/' },
+          { text: 'Packages management', link: '/packages-management/' },
           { text: 'Styleguides', link: '/styleguides/' },
           { text: 'Tools', link: '/tools/' },
         ],

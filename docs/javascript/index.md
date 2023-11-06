@@ -58,7 +58,7 @@ Add some scripts in your package.json to validate/format files:
 // ...
 ```
 
-See [scripts](/scripts/) for conventions.
+See [scripts](/packages-management/#scripts) for conventions.
 
 ### Related
 

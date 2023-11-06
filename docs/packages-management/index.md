@@ -1,6 +1,10 @@
-# Running scripts
+# Packages management
 
-We use [npm](https://www.npmjs.com/package/npm) scripts to run all kind of tasks related to npm packages.
+We use [npm](https://www.npmjs.com/package/npm) to install dependencies and tools.
+
+## Scripts
+
+We use npm scripts to run various commands easily. We're trying to standardize script names across projects, with no regard for the different tools used in the background.
 
 1. Favor npm default scripts such as `start` or `test` over custom ones.
 2. Name common scripts based on what they do, not what tools they run: `test:unit` instead of `jest`
