@@ -6,21 +6,21 @@ This is a list of tools we frenquently use for various projects.
 
 ### Node-only projects
 
-For styleguides, SPA or any other app using only Node.js, we prefer to keep things simple by installing it directly on our machine using [nvm](https://github.com/nvm-sh/nvm). A `.nvmrc` file containing the appropriate Node.js version number should be present at the root of every project. Run `nvm use` in the project directory to switch the Node.js version.
+For components libraries, SPA or any other app using only Node.js, we prefer to keep things simple by installing it directly on our machine using [nvm](https://github.com/nvm-sh/nvm). A `.nvmrc` file containing the appropriate Node.js version number should be present at the root of every project. Run `nvm use` in the project directory to switch the Node.js version.
 
 ### Larger projects
 
-Most recent and new projects should use Docker. There are no ready-made solution for common front-end tools at the time of writing.
+They generally use Docker and include a dedicated front-end container. There are no ready-made solution for common front-end tools at the time of writing as it depends mostly on the back-end.
 
-Older projects use Vagrant through [Drifter](https://github.com/liip/drifter). It has a [webpack role](https://liip-drifter.readthedocs.io/en/latest/roles/webpack.html) you can enable to automatically set it up.
+## Components libraries
 
-Each project must provide a setup guide on how to get started.
+### Fractal Starterkit <Badge type="danger">Legacy</Badge>
 
-## Styleguides
+The [Fractal Starterkit](https://github.com/liip/styleguide-starterkit) is a boilerplate to scaffold new components library documentation using Fractal and webpack.
 
-### Fractal Starterkit
+### Eleventy Design System <Badge type="warning">WIP</Badge>
 
-The [Fractal Starterkit](https://github.com/liip/styleguide-starterkit) is a boilerplate to scaffold new styleguides using Fractal preconfigured with webpack.
+[Eleventy Design System](https://gitlab.liip.ch/rawbot/eleventy-design-system) is a home-made solution based on the static site generator Eleventy and designed to replace Fractal in the future.
 
 ## Vue
 
@@ -30,20 +30,10 @@ When creating a new Single Page App with Vue.js, we favor the official [Create V
 
 ### Nuxt
 
-When server-side rendering makes sense, we prefer [Nuxt.js](https://nuxtjs.org/) over other frameworks to create universal apps.
+When a project requires a whole framework, we prefer [Nuxt](https://nuxtjs.org/) over others. But be sure to consider this option very carefuly as the past has shown us that it adds a lot of overhead to simple projects and makes large ones difficult to maintain in the long run.
 
 ## Testing
 
-### Jest
-
-For unit and integration testing, we use [Jest](https://jestjs.io/).
-
-### Cypress
+For unit and integration testing, we use [Vitest](https://vitest.dev/) or [Jest](https://jestjs.io/).
 
 For end-to-end testing, we use [Cypress](https://www.cypress.io/).
-
-## Legacy
-
-### Vue CLI
-
-Older Vue.js SPA use the legacy [Vue CLI](https://cli.vuejs.org/) to orchestrate the dev environment and build the app.
