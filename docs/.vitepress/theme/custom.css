@@ -1,0 +1,18 @@
+:root {
+  --vp-c-brand-1: hsl(110.6, 100%, 31.2%);
+  --vp-c-brand-2: hsl(110.6, 100%, 20%);
+
+  --vp-code-color: #666;
+}
+
+.dark {
+  --vp-c-brand-1: hsl(75.4, 100%, 45.9%);
+  --vp-c-brand-2: hsl(68.2, 100%, 50%);
+
+  --vp-code-color: #ccc;
+}
+
+.custom-block.tip a,
+.custom-block.tip code {
+  color: inherit;
+}

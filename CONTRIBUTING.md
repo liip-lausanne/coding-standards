@@ -8,7 +8,7 @@ Clone the repository
 git clone git@github.com:liip-lausanne/coding-standards.git
 ```
 
-Use the right Node.js version
+Ensure you use the right Node.js version, see .nvmrc for current. If you use `nvm`, you can run:
 
 ```sh
 nvm use

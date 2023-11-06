@@ -2,10 +2,11 @@
   "name": "liip-ls-coding-standards",
   "version": "1.0.0",
   "description": "Documentation about coding standards applied at Liip Lausanne",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "start": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/liip-lausanne/coding-standards#readme",
   "devDependencies": {
-    "vuepress": "^1.9.7"
+    "vitepress": "^1.0.0-rc.25"
   }
 }

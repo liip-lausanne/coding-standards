@@ -1,7 +1,7 @@
 # CSS
 
 - We prefer [Tailwind](https://tailwindcss.com/) over other frameworks.
-- We postprocess our stylesheets with [PostCSS](https://postcss.org/), for example to ensure [browsers support](/browsers-support) or [optimize the output](https://cssnano.co/).
+- We postprocess our stylesheets with [PostCSS](https://postcss.org/), for example to ensure [browsers support](/browsers-support/) or [optimize the output](https://cssnano.co/).
 - If really necessary, we preprocess our stylesheets with [Sass](https://sass-lang.com/) using the SCSS syntax.
 
 ## Good practices
