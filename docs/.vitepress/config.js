@@ -6,7 +6,7 @@ export default defineConfig({
   description:
     'Current practice and recommendations for web development projects',
 
-  base: '/coding-standards/',
+  base: process.env.BASE || '/coding-standards/',
 
   vite: {
     server: {
