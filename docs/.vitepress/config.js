@@ -34,7 +34,7 @@ export default defineConfig({
           { text: 'Accessibility', link: '/accessibility/' },
           { text: 'Assets bundling', link: '/assets-bundling/' },
           { text: 'Packages management', link: '/packages-management/' },
-          { text: 'Styleguides', link: '/styleguides/' },
+          { text: 'Components libraries', link: '/components-libraries/' },
           { text: 'Tools', link: '/tools/' },
         ],
       },
